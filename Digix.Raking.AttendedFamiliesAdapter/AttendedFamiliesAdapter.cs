@@ -9,7 +9,9 @@ namespace Digix.Raking.Adapters
     {
         public Task SaveAttendedFamily(Guid familyId, int score, int totalCriterias, DateTime dateTimeClassification)
         {
-            return Task.Run(() => Console.WriteLine(($"Info - Enviando dados família clissificada para outro contexto, Família: {familyId}, pontuação: {score}, total de critérios atendidos: {totalCriterias}")));
+            return Task.Run(() => 
+                Debugger.Log(0, "Info", $"Enviando dados família clissificada para outro contexto, Família: {familyId}, pontuação: {score}, total de critérios atendidos: {totalCriterias}")
+            );
         }
     }
 }

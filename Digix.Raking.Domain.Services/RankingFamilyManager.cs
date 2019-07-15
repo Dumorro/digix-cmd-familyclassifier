@@ -36,16 +36,15 @@ namespace Digix.Raking.Domain.Services
 
         public async Task ProcessClassification(IEnumerable<Family> families)
         {
-            Parallel.ForEach(families, (family) =>
-                                            {
-                                                QueueToRanking(family);
-                                            });
+            Parallel.ForEach(families.Where(f=> ALLOWED_STATUS_IDS.Contains(f.Status)), 
+                                (family) =>
+                                {
+                                    QueueToRanking(family);
+                                }
+                            );
         }
         private void QueueToRanking(Family family)
         {
-            if (!ALLOWED_STATUS_IDS.Contains(family.Status))
-                return;
-
             var classification = _scoreFamilyServiceManager.CalculateScore(family);
             var @event = new FamilyScoreCalculatedEvent(family.Id, classification.Score, classification.TotalCriterias);
 

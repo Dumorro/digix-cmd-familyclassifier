@@ -4,7 +4,7 @@ using Digix.Raking.Domain.Core.Services;
 using System;
 using Xunit;
 
-namespace Digix.Raking.UnitTests
+namespace Digix.Raking.Tests
 {
     public class ScoreFamilyServiceManagerTest
     {

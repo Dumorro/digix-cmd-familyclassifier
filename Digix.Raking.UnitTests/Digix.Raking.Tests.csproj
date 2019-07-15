@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
     <PackageReference Include="AutoMoq" Version="2.0.0" />
     <PackageReference Include="Bogus" Version="28.0.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
@@ -16,7 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Digix.Raking.AttendedFamiliesAdapter\Digix.Raking.AttendedFamiliesAdapter.csproj" />
+    <ProjectReference Include="..\Digix.Raking.DistributedCache\Digix.Raking.DistributedCacheAdapter.csproj" />
+    <ProjectReference Include="..\Digix.Raking.Domain.Services\Digix.Raking.Domain.Services.csproj" />
     <ProjectReference Include="..\Digix.Raking.Domain\Digix.Raking.Domain.Core.csproj" />
+    <ProjectReference Include="..\Digix.Raking.EventDispatcher\Digix.Raking.EventDispatcher.csproj" />
   </ItemGroup>
 
 </Project>

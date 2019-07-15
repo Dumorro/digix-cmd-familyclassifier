@@ -19,13 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.Domain.Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{43DD1C7E-8B34-40F1-B4FC-234F4452F211}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.UnitTests", "Digix.Raking.UnitTests\Digix.Raking.UnitTests.csproj", "{FF54ABA7-938D-4922-9BF5-D57AD1E18034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.Tests", "Digix.Raking.UnitTests\Digix.Raking.Tests.csproj", "{FF54ABA7-938D-4922-9BF5-D57AD1E18034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digix.Raking.AttendedFamiliesAdapter", "Digix.Raking.AttendedFamiliesAdapter\Digix.Raking.AttendedFamiliesAdapter.csproj", "{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.AttendedFamiliesAdapter", "Digix.Raking.AttendedFamiliesAdapter\Digix.Raking.AttendedFamiliesAdapter.csproj", "{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{146488CB-3F90-4A55-AEDE-12274661D212}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digix.Raking.DistributedCacheAdapter", "Digix.Raking.DistributedCache\Digix.Raking.DistributedCacheAdapter.csproj", "{60069403-719A-41CD-8664-8292FA364715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.DistributedCacheAdapter", "Digix.Raking.DistributedCache\Digix.Raking.DistributedCacheAdapter.csproj", "{60069403-719A-41CD-8664-8292FA364715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
