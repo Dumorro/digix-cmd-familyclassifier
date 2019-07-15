@@ -23,7 +23,10 @@ namespace Digix.Raking.Domain.Services.ScoreRules
             int? totalUnder18 = base.family?.People.Count(p => IsUnderThen18(p));
 
             if (!totalUnder18.HasValue)
+            {
                 base._isClassified = false;
+                return;
+            }
 
             base._isClassified = true;
 

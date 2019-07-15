@@ -24,7 +24,10 @@ namespace Digix.Raking.Domain.Services.ScoreRules
             double? totalIncome = base.family?.Incomes.Sum(i => i.Value);
 
             if (!totalIncome.HasValue)
+            {
                 base._isClassified = false;
+                return;
+            }
 
             base._isClassified = true;
 

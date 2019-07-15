@@ -28,8 +28,11 @@ namespace Digix.Raking.Domain.Services.ScoreRules
             int? ageApplicant = GetAgeApplicant();
 
             if (!ageApplicant.HasValue)
+            {
                 base._isClassified = false;
-            
+                return;
+            }
+
             base._isClassified = true;
 
             if (ageApplicant <= LIMIT_FIRST_RANGE_VALUE)
