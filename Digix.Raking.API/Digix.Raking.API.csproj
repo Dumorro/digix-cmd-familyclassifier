@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>1b54908d-15b6-4e26-afec-aaf1984612a2</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client.pt-br" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Digix.Raking.AttendedFamiliesAdapter\Digix.Raking.AttendedFamiliesAdapter.csproj" />
+    <ProjectReference Include="..\Digix.Raking.DistributedCache\Digix.Raking.DistributedCacheAdapter.csproj" />
+    <ProjectReference Include="..\Digix.Raking.Domain.Services\Digix.Raking.Domain.Services.csproj" />
+    <ProjectReference Include="..\Digix.Raking.Domain\Digix.Raking.Domain.Core.csproj" />
+    <ProjectReference Include="..\Digix.Raking.EventDispatcher\Digix.Raking.EventDispatcher.csproj" />
+  </ItemGroup>
+
+</Project>

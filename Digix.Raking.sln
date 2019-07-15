@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.API", "Digix.Raking.API\Digix.Raking.API.csproj", "{35732924-AA87-4F37-A01D-67D49DEB5AFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenter", "Presenter", "{02E3089F-89B3-4D6E-B8D8-60C66F88A25D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{0EFC46D7-A2BF-41B0-9EDA-F6754E0DCFFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B2374A5D-F1DE-41B9-8407-73ACAAEC0334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.Domain.Core", "Digix.Raking.Domain\Digix.Raking.Domain.Core.csproj", "{A0724EE0-F9D4-4508-8411-AFB8E0935FE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.EventDispatcher", "Digix.Raking.EventDispatcher\Digix.Raking.EventDispatcher.csproj", "{5B3BA8E6-1EB8-4AF7-BFD4-CDCF5FE36B0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.Domain.Services", "Digix.Raking.Domain.Services\Digix.Raking.Domain.Services.csproj", "{591600F3-E058-4C86-A557-440B905EA999}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{43DD1C7E-8B34-40F1-B4FC-234F4452F211}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digix.Raking.UnitTests", "Digix.Raking.UnitTests\Digix.Raking.UnitTests.csproj", "{FF54ABA7-938D-4922-9BF5-D57AD1E18034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digix.Raking.AttendedFamiliesAdapter", "Digix.Raking.AttendedFamiliesAdapter\Digix.Raking.AttendedFamiliesAdapter.csproj", "{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{146488CB-3F90-4A55-AEDE-12274661D212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digix.Raking.DistributedCacheAdapter", "Digix.Raking.DistributedCache\Digix.Raking.DistributedCacheAdapter.csproj", "{60069403-719A-41CD-8664-8292FA364715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35732924-AA87-4F37-A01D-67D49DEB5AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35732924-AA87-4F37-A01D-67D49DEB5AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35732924-AA87-4F37-A01D-67D49DEB5AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35732924-AA87-4F37-A01D-67D49DEB5AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0724EE0-F9D4-4508-8411-AFB8E0935FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0724EE0-F9D4-4508-8411-AFB8E0935FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0724EE0-F9D4-4508-8411-AFB8E0935FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0724EE0-F9D4-4508-8411-AFB8E0935FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B3BA8E6-1EB8-4AF7-BFD4-CDCF5FE36B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3BA8E6-1EB8-4AF7-BFD4-CDCF5FE36B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3BA8E6-1EB8-4AF7-BFD4-CDCF5FE36B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3BA8E6-1EB8-4AF7-BFD4-CDCF5FE36B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591600F3-E058-4C86-A557-440B905EA999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591600F3-E058-4C86-A557-440B905EA999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591600F3-E058-4C86-A557-440B905EA999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591600F3-E058-4C86-A557-440B905EA999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF54ABA7-938D-4922-9BF5-D57AD1E18034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF54ABA7-938D-4922-9BF5-D57AD1E18034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF54ABA7-938D-4922-9BF5-D57AD1E18034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF54ABA7-938D-4922-9BF5-D57AD1E18034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEE0A3C-E4CC-4C31-804E-BC76B895E373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60069403-719A-41CD-8664-8292FA364715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60069403-719A-41CD-8664-8292FA364715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60069403-719A-41CD-8664-8292FA364715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60069403-719A-41CD-8664-8292FA364715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35732924-AA87-4F37-A01D-67D49DEB5AFE} = {02E3089F-89B3-4D6E-B8D8-60C66F88A25D}
+		{A0724EE0-F9D4-4508-8411-AFB8E0935FE6} = {B2374A5D-F1DE-41B9-8407-73ACAAEC0334}
+		{5B3BA8E6-1EB8-4AF7-BFD4-CDCF5FE36B0C} = {0EFC46D7-A2BF-41B0-9EDA-F6754E0DCFFD}
+		{591600F3-E058-4C86-A557-440B905EA999} = {B2374A5D-F1DE-41B9-8407-73ACAAEC0334}
+		{FF54ABA7-938D-4922-9BF5-D57AD1E18034} = {43DD1C7E-8B34-40F1-B4FC-234F4452F211}
+		{1FEE0A3C-E4CC-4C31-804E-BC76B895E373} = {146488CB-3F90-4A55-AEDE-12274661D212}
+		{60069403-719A-41CD-8664-8292FA364715} = {146488CB-3F90-4A55-AEDE-12274661D212}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA54D5D5-E490-44CA-944D-D3E7958CB067}
+	EndGlobalSection
+EndGlobal
