@@ -2,6 +2,8 @@
 using Digix.Raking.Adapters;
 using Digix.Raking.Domain.Core.Adapters;
 using Digix.Raking.Domain.Core.DomainEvents;
+using Digix.Raking.Domain.Core.Entities.Base;
+using Digix.Raking.Domain.Core.Factories;
 using Digix.Raking.Domain.Core.Services;
 using Digix.Raking.Domain.Services.Factories;
 using Digix.Raking.EventDispatcher;
@@ -62,6 +64,7 @@ namespace Digix.Raking.Tests.Base
                 return AutofacContainer.Resolve<IAttendedFamiliesAdapter>();
             }
         }
+
         protected IDomainEventDispatcher DomainEventDispatcher
         {
             get
@@ -70,6 +73,13 @@ namespace Digix.Raking.Tests.Base
             }
         }
 
+        protected IScoreFactory ScoreFactory
+        {
+            get
+            {
+                return AutofacContainer.Resolve<IScoreFactory>();
+            }
+        }
 
         private static Assembly[] GetAssemblies()
         {

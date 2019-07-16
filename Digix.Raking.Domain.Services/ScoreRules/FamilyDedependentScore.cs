@@ -5,7 +5,7 @@ using Digix.Raking.Domain.Core.Entities.Base;
 
 namespace Digix.Raking.Domain.Services.ScoreRules
 {
-    class FamilyDedependentScore : FamilyScoreBase
+    public class FamilyDedependentScore : FamilyScoreBase
     {
         //TODO: change const to configurated values
         private const int FIRST_SCORE_VALUE = 3;

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Digix.Raking.Domain.Services.ScoreRules
 {
-    class FamilyIncomeScore : FamilyScoreBase
+    public class FamilyIncomeScore : FamilyScoreBase
     {
 
         private const int SCORE_FIRST_RANGE_VALUE = 5;

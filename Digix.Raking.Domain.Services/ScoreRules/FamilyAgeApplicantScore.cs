@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Digix.Raking.Domain.Services.ScoreRules
 {
-    class FamilyAgeApplicantScore : FamilyScoreBase
+    public class FamilyAgeApplicantScore : FamilyScoreBase
     {
         //TODO: change const to configurated values
         private const int SCORE_FIRST_RANGE_VALUE = 3;
@@ -34,13 +34,13 @@ namespace Digix.Raking.Domain.Services.ScoreRules
 
             base._isClassified = true;
 
-            if (ageApplicant <= LIMIT_FIRST_RANGE_VALUE)
+            if (ageApplicant >= LIMIT_FIRST_RANGE_VALUE)
             {
                 base._score = SCORE_FIRST_RANGE_VALUE;
                 return;
             }
 
-            if (ageApplicant > LIMIT_FIRST_RANGE_VALUE && ageApplicant <= LIMIT_SECOND_RANGE_VALUE)
+            if (ageApplicant >= LIMIT_SECOND_RANGE_VALUE && ageApplicant < LIMIT_FIRST_RANGE_VALUE)
             {
                 base._score = SCORE_SECOND_RANGE_VALUE;
                 return;

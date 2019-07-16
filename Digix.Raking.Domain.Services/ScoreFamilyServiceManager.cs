@@ -13,12 +13,10 @@ namespace Digix.Raking.Domain.Services
 {
     public class ScoreFamilyServiceManager : IScoreFamilyServiceManager
     {
-        private readonly IComponentContext _container;
         private readonly IScoreFactory _scoreFactory;
 
-        public ScoreFamilyServiceManager(IComponentContext container, IScoreFactory scoreFactory)
+        public ScoreFamilyServiceManager( IScoreFactory scoreFactory)
         {
-            _container = container;
             _scoreFactory = scoreFactory;
         }
 
