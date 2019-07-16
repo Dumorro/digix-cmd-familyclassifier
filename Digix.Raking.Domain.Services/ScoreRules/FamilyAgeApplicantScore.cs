@@ -1,8 +1,7 @@
 ﻿using Digix.Raking.Domain.Core.Entities;
+using Digix.Raking.Domain.Core.Entities.Base;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Digix.Raking.Domain.Services.ScoreRules
 {
@@ -23,7 +22,7 @@ namespace Digix.Raking.Domain.Services.ScoreRules
         }
 
 
-        protected override void CalculateScore()
+        public override void CalculateScore()
         {
             int? ageApplicant = GetAgeApplicant();
 
@@ -36,17 +35,23 @@ namespace Digix.Raking.Domain.Services.ScoreRules
             base._isClassified = true;
 
             if (ageApplicant <= LIMIT_FIRST_RANGE_VALUE)
+            {
                 base._score = SCORE_FIRST_RANGE_VALUE;
+                return;
+            }
 
             if (ageApplicant > LIMIT_FIRST_RANGE_VALUE && ageApplicant <= LIMIT_SECOND_RANGE_VALUE)
+            {
                 base._score = SCORE_SECOND_RANGE_VALUE;
+                return;
+            }
 
             base._score = SCORE_THIRD_RANGE_VALUE;
         }
 
         private int? GetAgeApplicant()
         {
-            var applicant = this.family.People?.FirstOrDefault(a=> a.Type.Equals(APPLICANT_TYPE));
+            var applicant = this._family.People?.FirstOrDefault(a=> a.Type.Equals(APPLICANT_TYPE));
 
             if (applicant == null)
                 return null;

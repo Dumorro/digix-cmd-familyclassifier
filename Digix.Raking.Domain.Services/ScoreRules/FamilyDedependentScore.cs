@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Digix.Raking.Domain.Core.Entities;
+using Digix.Raking.Domain.Core.Entities.Base;
 
 namespace Digix.Raking.Domain.Services.ScoreRules
 {
@@ -18,9 +17,9 @@ namespace Digix.Raking.Domain.Services.ScoreRules
         {
         }
 
-        protected override void CalculateScore()
+        public override void CalculateScore()
         {
-            int? totalUnder18 = base.family?.People.Count(p => IsUnderThen18(p));
+            int? totalUnder18 = base._family?.People.Count(p => IsUnderThen18(p));
 
             if (!totalUnder18.HasValue)
             {
